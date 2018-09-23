@@ -11,8 +11,5 @@ module.exports = async (client, guild) => {
     .setThumbnail(guild.iconURL)
     .setTitle(`RyanBot Has stopped serving **${guild.name}**`)
     .setDescription(`**Guild Owner**: ${guild.owner}\n**Guild Name**: ${guild.name}\n**Guild ID**: ${guild.id}\n**Guild Channels Count**: ${guild.channels.size} \n**Members Lost**: ${guild.memberCount}`)
-    send(rbnleave, rbnembed, {
-        name: `Bot leaving`,
-        icon: `https://cdn.discordapp.com/attachments/421620705570979843/462632872616919053/R-logo512.png`
-    })
+    rbnleave.send(rbnembed)
 }
