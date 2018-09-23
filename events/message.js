@@ -3,7 +3,7 @@ const send = require('quick.hook')
 let cooldown = new Set();
 
 module.exports = (client, message, guild) => {
-  let lgcnl = client.channels.get("459324984339333122")
+  let lgcnl = client.channels.get("459324984339333122") //change this to your channel id
   if (message.author.bot) return;
 
   const settings = message.settings = client.getGuildSettings(message.guild);
