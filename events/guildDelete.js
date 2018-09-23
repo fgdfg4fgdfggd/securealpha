@@ -3,9 +3,6 @@ const send = require('quick.hook')
 
 module.exports = async (client, guild) => {
     const rbnleave = client.channels.get("449130097136369664"); //CHANGE TO YOUR CHANNEL-ID TO GET NOTIFICATIONS
-    const invite = await guild.channels.first().createInvite({
-    maxAge: 0
-  });
     let rbnembed = new discord.RichEmbed()
     .setAuthor(client.user.username, client.user.avatarURL)
     .setThumbnail(guild.iconURL)
