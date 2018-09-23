@@ -8,8 +8,5 @@ module.exports = (client, guild) => {
     .setTitle(`RyanBot started serving **${guild.name}**`)
     .setThumbnail(guild.iconURL)
     .setDescription(`**Guild Owner**: ${guild.owner}\n**Guild Name**: ${guild.name}\n**Guild ID**: ${guild.id}\n**Guild Channels Count**: ${guild.channels.size} \n**Members Gained**: ${guild.memberCount}`)
-    send(rbnjoin, rbnEmbed, {
-        name: `Bot Joined`,
-        icon: `https://cdn.discordapp.com/attachments/421620705570979843/462632872616919053/R-logo512.png`
-    })
+    rbnjoin.send(rbnEmbed)
  }
