@@ -18,9 +18,7 @@ module.exports = async (client, message) => {
     function status(){
     let status = [
         `.help | ${client.guilds.size} Guilds`,
-      `.help | With RyansHDs#4461`,
       `.help | ${client.users.size} Users`,
-      `.help | https://ryanbotc.glitch.me/`
     ]
     let rstatus = Math.floor(Math.random() * status.length);
     client.user.setActivity(status[rstatus], {type:"PLAYING", url:"https://twitch.tv/ryanshds"})
