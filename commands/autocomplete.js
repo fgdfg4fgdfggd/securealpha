@@ -20,7 +20,7 @@ let user = message.guild.members.get(indexes[members.indexOf(username)]);
       .setColor('RANDOM');
       message.channel.send(aEmbed);
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666547517772660736')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on autocomplete commands!\n\nError:\n\n ${err}`)
     }
