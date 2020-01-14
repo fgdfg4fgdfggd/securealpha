@@ -9,7 +9,7 @@ exports.run = async (client, message, args, level) => {
   .setColor(`GREEN`)
   message.channel.send(PermEmb)
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on permlevel commands!\n\nError:\n\n ${err}`)
     }
