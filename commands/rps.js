@@ -61,7 +61,7 @@ exports.run = async (bot, message, args, color, prefix) => {
     message.channel.send(`You need to use .rps <rock|paper|scissors>`);
   }
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on rps commands!\n\nError:\n\n ${err}`)
     }
@@ -77,6 +77,6 @@ exports.conf = {
 exports.help = {
 	name: "rps",
   category: 'Fun',
-	description: 'Play Rock Paper Scissors with bot. If you win you got KR.',
+	description: 'Play Rock Paper Scissors with bot. If you win you got money.',
   usage: 'rps <rock|paper|scissors>'
 }
