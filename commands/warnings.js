@@ -30,6 +30,6 @@ exports.conf = {
 exports.help = {
   name: 'warnlevel',
   category: 'Mod',
-  description: 'Check warnlevel on mentioned user',
+  description: 'Check warnlevel on user',
   usage: 'warnlevel [mention]'
 };
