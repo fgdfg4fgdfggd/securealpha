@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
         message.channel.send(storeEmbed)
     })
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on store commands!\n\nError:\n\n ${err}`)
     }
@@ -42,6 +42,6 @@ exports.conf = {
 exports.help = {
   name: 'store',
   category: 'Fun',
-  description: 'View RyanBot Store',
+  description: 'View Phantom Store',
   usage: 'acc'
 };
