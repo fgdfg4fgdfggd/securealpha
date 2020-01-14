@@ -4,12 +4,12 @@ exports.run = (client, message, args) => {
   try {
  let hallembed = new Discord.RichEmbed()
  .setTitle('Donator Hall')
- .setDescription(`**Seems like there isn't anyone in this hall yet! Become one by [donating](https://www.patreon.com/RyanBot)**`)
+ .setDescription(`**Coming Soon**`)
  .setColor(`GREEN`)
  
  message.channel.send(hallembed)
         } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on donatorhall commands!\n\nError:\n\n ${err}`)
     }
