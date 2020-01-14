@@ -42,13 +42,13 @@ exports.run = (client, message, args, level) => {
     });
     let dmembed = new Discord.RichEmbed()
     .setAuthor(`RyanBot Help`, message.author.displayAvatarURL)
-    .setDescription(`Hello **${message.author.tag}**\n\nFor full commands list can be found at my [website](https://ryanbotc.glitch.me/)\nIf you need help with bot you can join the [support server](https://discord.gg/FTmxve7). \n\n[Invite](https://discordapp.com/oauth2/authorize?client_id=450233057908097024&permissions=8&scope=bot) the bot to your server! `)
+    .setDescription(`Hello **${message.author.tag}**\n\nVisit RCDForum [website](https:/rcdforum.com/)\nIf you need help with bot you can join the [support server](https://discord.gg/GPMH6YD). \n\n[RCD](https://www.roblox.com/groups/3326755/ROBLOX-Community-Developers#!/about) don't forget to join! `)
     .setColor('RANDOM')
     .setTimestamp()
     .setFooter('<> = Must be placed. [] = Optional')
     message.author.send(dmembed)
     let channelembed = new Discord.RichEmbed()
-    .setDescription(`<@${message.author.id}> Check your DM or use this link to go to my [website](https://ryanbotc.glitch.me/)`)
+    .setDescription(`<@${message.author.id}> Please check your DM)`)
     message.channel.send(channelembed)
     
 
@@ -66,7 +66,7 @@ exports.run = (client, message, args, level) => {
     }
   }
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on help commands!\n\nError:\n\n ${err}`)
     }
