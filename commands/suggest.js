@@ -25,7 +25,7 @@ exports.run = (client, message) => {
         cooldown.delete(message.author.id);
     }, 300000);
     let guild = message.guild;
-    const cnl = client.channels.get('459302740351385600');
+    const cnl = client.channels.get('666564351234277376');
     message.reply('Thx for submitting suggestion! Your suggestion is now on process.');
     const embed = new Discord.RichEmbed()
   .setAuthor(`Suggestion from ${message.author.tag}`, message.author.displayAvatarURL)
@@ -35,12 +35,12 @@ exports.run = (client, message) => {
   .setFooter(`${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
   send(cnl, embed, {
         name: `Bot Suggestion`,
-        icon: `https://cdn.discordapp.com/attachments/421620705570979843/462632872616919053/R-logo512.png`
+        icon: `https://cdn.discordapp.com/attachments/666560077226049546/666560191130501150/phantomlogo.png`
   })
   .catch(e => client.logger.error(e))
 // In your command
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on suggest commands!\n\nError:\n\n ${err}`)
     }
