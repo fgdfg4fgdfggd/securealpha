@@ -33,13 +33,13 @@ exports.run = async (bot, message, args) => {
         return message.reply(':x: **Max 1 word**');
     }
     const emb = new Discord.RichEmbed();
-    emb.setAuthor("Trump has now made " + meow + " illegal!", "http://blog.adsy.me/wp-content/uploads/2016/11/angry-side-face-trump-transparent.png");
+    emb.setAuthor("Trump has now made " + meow + " illegal!", "https://img.pngio.com/donald-trump-png-images-free-download-png-trump-1500_1125.png");
     emb.setImage(illegal);
     message.channel.send({
         embed: emb
     })
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on illegal commands!\n\nError:\n\n ${err}`)
     }
@@ -55,6 +55,6 @@ exports.conf = {
 exports.help = {
   name: 'illegal',
   category: 'FUN',
-  description: 'Make something illegal using the bot :P',
+  description: 'Make something illegal using the bot',
   usage: 'illegal <text>',
 }
