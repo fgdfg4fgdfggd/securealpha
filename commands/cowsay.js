@@ -34,7 +34,7 @@ exports.run = (client, message, args) => {
         e: 'oO'
     }), {code: 'css'});
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on cowsay commands!\n\nError:\n\n ${err}`)
     }
