@@ -5,7 +5,7 @@ const db = require('quick.db')
 
 module.exports.run= async (client, message, args) => {
   try {
-  let worklog = client.channels.get('463637802026795010')
+  let worklog = client.channels.get('666632823280500795')
      let cooldown = 8.64e+7;
     let amount = Math.floor((Math.random() * 300) + 100);
   let workplace = ["Office", "Bank", "Restaurant", "Market"]
@@ -39,7 +39,7 @@ module.exports.run= async (client, message, args) => {
         })}
     })} catch(err) {console.log(err)}
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on work commands!\n\nError:\n\n ${err}`)
     }
@@ -55,6 +55,6 @@ exports.conf = {
 exports.help = {
 	name: "work",
   category: "Economy",
-  description: "get a work on random place and get payed out.",
+  description: "work  and get paid.",
   usage: "work"
 }
