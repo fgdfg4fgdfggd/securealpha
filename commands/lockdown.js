@@ -50,7 +50,7 @@ exports.run = (client, message, args, tools) => {
                             message.channel.overwritePermissions(message.guild.id, {
                                     SEND_MESSAGES: null
                                 })
-                                .then(message.channel.send('Lockdown lifted. Everyone can chat now..'))
+                                .then(message.channel.send('Lockdown lifted. Everyone can chat now.. also you blame the noob who caused the lockdown '))
                                 .catch(console.error);
                             delete client.lockit[message.channel.id];
                         }, ms(time));
@@ -61,7 +61,7 @@ exports.run = (client, message, args, tools) => {
             });
     }
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on lockdown commands!\n\nError:\n\n ${err}`)
     }
