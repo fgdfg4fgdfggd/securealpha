@@ -63,7 +63,7 @@
     } else {
         let buyEmbed = new discord.RichEmbed()
         .setAuthor(`Success`, message.author.displayAvatarURL)
-        .setThumbnail(`https://www.anime-planet.com/images/characters/military-store-manager-60654.jpg`)
+        .setThumbnail(`https://tenor.com/6Xry.gif`)
         .setColor(`#40e01b`)//lemme get some hex colour..
         .setFooter(`Payments Made Are Final When Buying`)
         .addField(`You finally made a purchase`, `Buyer: ${message.author}\nItem Purchased: ${args[0]}\nPayment: kr\nQuantity: ${amount}\nPayout: ${currencyFormatter.format(cost, { code: 'SEK' })}`) // Change Details (if u want)
