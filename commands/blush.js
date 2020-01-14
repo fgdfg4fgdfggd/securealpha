@@ -22,7 +22,7 @@ try {
     var fs = require('fs');
     var Discord = require('discord.js');
 
-        var images = ['https://cdn.weeb.sh/images/Hky7MImwW.gif', 'https://cdn.weeb.sh/images/ByD4GLXPZ.gif', 'https://cdn.weeb.sh/images/HklJGIXPW.gif', 'https://cdn.weeb.sh/images/S1uZMIXP-.gif', 'https://cdn.weeb.sh/images/S1X7GIXw-.gif', 'https://cdn.weeb.sh/images/ryuxzI7DW.gif', 'https://cdn.weeb.sh/images/r1n7M87wW.gif', 'https://cdn.weeb.sh/images/SJkffIXw-.gif', 'https://cdn.weeb.sh/images/BJogMImDW.gif', 'https://cdn.weeb.sh/images/BJH4f8mP-.gif']
+        var images = ['https://tenor.com/zHQF.gif', 'https://tenor.com/yiVG.gif', 'https://tenor.com/o36U.gif', 'https://tenor.com/bdmlY.gif', 'https://tenor.com/bdZi0.gif', 'https://tenor.com/tA4D.gif', 'https://cdn.weeb.sh/images/r1n7M87wW.gif', 'https://tenor.com/I0tv.giff', 'https://tenor.com/ba08b.gif', 'https://tenor.com/9DNV.gif']
         var rand = Math.floor(Math.random() * images.length);
         var randomImage = images[rand];
   
@@ -44,7 +44,7 @@ try {
         });
         message.channel.send(blushembed)
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666547517772660736')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on stats commands!\n\nError:\n\n ${err}`)
     }
