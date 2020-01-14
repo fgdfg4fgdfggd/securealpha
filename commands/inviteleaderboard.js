@@ -35,7 +35,7 @@ exports.run = async (client, message, args, tools) => {
     message.channel.send({embed})
         // Be sure to put the table in a codeblock for proper formatting
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on inviteleaderboard commands!\n\nError:\n\n ${err}`)
     }
@@ -51,6 +51,6 @@ exports.conf = {
 exports.help = {
   name: 'inviteleaderboard',
   category: 'Util',
-  description: 'Show Invite leader of this server!',
+  description: 'Show Invite of this server!',
   usage: 'inviteleaderboard'
 }
