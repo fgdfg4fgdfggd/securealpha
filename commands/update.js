@@ -13,7 +13,7 @@ exports.run = async (client, message, args, tools) => {
     .setColor(0xffffff)
 
   // Verify Permission
-  if (message.author.id !== '292936070603997185') {
+  if (message.author.id !== '605806584232411145') {
 
     // Configure Embed
     let missingperm = new Discord.RichEmbed()
@@ -49,7 +49,7 @@ exports.run = async (client, message, args, tools) => {
   // Send Embed
   message.channel.send(succesemb);
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on update commands!\n\nError:\n\n ${err}`)
     }
