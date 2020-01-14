@@ -3,7 +3,7 @@ const send = require('quick.hook')
 let cooldown = new Set();
 
 module.exports = (client, message, guild) => {
-  let lgcnl = client.channels.get("459324984339333122") //change this to your channel id
+  let lgcnl = client.channels.get("666618216541323294") //change this to your channel id
   if (message.author.bot) return;
 
   const settings = message.settings = client.getGuildSettings(message.guild);
@@ -52,8 +52,8 @@ module.exports = (client, message, guild) => {
   .setTimestamp()
   .setColor('RANDOM')
     send(lgcnl, logembed, {
-        name: `RyanBot CMD Logs`,
-        icon: `https://cdn.discordapp.com/attachments/421620705570979843/462632872616919053/R-logo512.png`
+        name: `Phantom CMD Logs`,
+        icon: `https://cdn.discordapp.com/attachments/666560077226049546/666560191130501150/phantomlogo.png`
     })
   cmd.run(client, message, args, level);
 };
