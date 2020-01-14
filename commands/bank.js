@@ -26,8 +26,8 @@ exports.run = (client, message, args) => {
     }, 10000);
     
     let user = message.mentions.users.first() || message.author;
-  const newaccount = client.channels.get(`463566107022983169`)
-  const error = client.channels.get(`463578170034094080`)
+  const newaccount = client.channels.get(`666551260874539008`)
+  const error = client.channels.get(`666551282554896398`)
   db.fetch(`Currency_${user.id}`).then(rm => {
   var timestamp = require('console-timestamp');
     let rmembed = new Discord.RichEmbed()
@@ -51,7 +51,7 @@ exports.run = (client, message, args) => {
         })
      }})
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666547517772660736')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on bank commands!\n\nError:\n\n ${err}`)
     }
