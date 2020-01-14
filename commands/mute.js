@@ -25,7 +25,7 @@ let channel= message.guild.channels.find(`name`, 'mod-log')
 if(!channel) return message.channel.send("Can't find mod-log Channel! Please Create one!")
   channel.send(muteEmbed)
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on mute commands!\n\nError:\n\n ${err}`)
     }
@@ -41,6 +41,6 @@ module.exports.conf = {
 module.exports.help = {
   name: "mute",
   category: 'Mod',
-  description: 'Mute mentioned User!',
+  description: 'Mute User!',
   usage: 'mute <mention>',
 }
