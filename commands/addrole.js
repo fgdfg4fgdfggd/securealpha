@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
     message.channel.send(`Congrats to <@${rMember.id}>, they have been given the role ${gRole.name}. We tried to DM them, but their DMs are locked.`)
   }
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666547517772660736')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on addrole commands!\n\nError:\n\n ${err}`)
     }
