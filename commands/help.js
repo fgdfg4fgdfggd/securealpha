@@ -41,7 +41,7 @@ exports.run = (client, message, args, level) => {
       output += `${message.settings.prefix}${c.help.name}${" ".repeat(longest - c.help.name.length)} - ${c.help.description}\n`;
     });
     let dmembed = new Discord.RichEmbed()
-    .setAuthor(`RyanBot Help`, message.author.displayAvatarURL)
+    .setAuthor(`Phantom Help`, message.author.displayAvatarURL)
     .setDescription(`Hello **${message.author.tag}**\n\nVisit RCDForum [website](https:/rcdforum.com/)\nIf you need help with bot you can join the [support server](https://discord.gg/GPMH6YD). \n\n[RCD](https://www.roblox.com/groups/3326755/ROBLOX-Community-Developers#!/about) don't forget to join! `)
     .setColor('RANDOM')
     .setTimestamp()
