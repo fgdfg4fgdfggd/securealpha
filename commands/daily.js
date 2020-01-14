@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     
     let cooldown = 8.64e+7;
     let amount = Math.floor((Math.random() * 300) + 100);
-  let dailylog = bot.channels.get('463637778819710977')
+  let dailylog = bot.channels.get('666621169734123522')
   
     let lastDaily = await db.fetch(`lastDaily_${message.author.id}`)
     try {
@@ -39,7 +39,7 @@ module.exports.run = async (bot, message, args) => {
         })}
     })} catch(err) {console.log(err)}
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on daily commands!\n\nError:\n\n ${err}`)
     }
@@ -55,6 +55,6 @@ exports.conf = {
 exports.help = {
   name: 'daily',
   category: 'Fun',
-  description: 'Claim your daily KR',
+  description: 'Claim your daily money!',
   usage: 'acc'
 };
