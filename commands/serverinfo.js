@@ -44,7 +44,7 @@ module.exports.run = async (bot, message, args) => {
    
    message.channel.send(serverembed);
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on serverinfo commands!\n\nError:\n\n ${err}`)
     }
