@@ -31,7 +31,7 @@ module.exports.run = async (bot, message, args) => {
     message.guild.member(bUser).ban(bReason);
     incidentchannel.send(banEmbed);
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666547517772660736')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on ban commands!\n\nError:\n\n ${err}`)
     }
