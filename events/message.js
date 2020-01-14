@@ -47,7 +47,7 @@ module.exports = (client, message, guild) => {
     message.flags.push(args.shift().slice(1));
   }
   let logembed = new Discord.RichEmbed()
-  .setAuthor(`${message.author.tag} Use RyanBot Commands!`, message.author.displayAvatarURL)
+  .setAuthor(`${message.author.tag} Use Phantom Commands!`, message.author.displayAvatarURL)
   .setDescription(`**User permission name**: ${client.config.permLevels.find(l => l.level === level).name}\n**User Name**: ${message.author.tag}\n**User ID**: ${message.author.id}\n**Command Name**: ${cmd.help.name}\n**Server Name**: ${message.guild.name}`)
   .setTimestamp()
   .setColor('RANDOM')
