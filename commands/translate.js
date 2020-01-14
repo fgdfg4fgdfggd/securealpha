@@ -20,7 +20,7 @@ exports.run = async (client, msg, args) => {
     let finalToTrans = toTrans.slice(toTrans.length - toTrans.length, toTrans.length - 2).join(' ');
     translate(finalToTrans, {to: language}).then(res => {
         const embed = new Discord.RichEmbed()
-            .setAuthor('RyanBot\'s translator', client.user.displayAvatarURL)
+            .setAuthor('Phantom\'s translator', client.user.displayAvatarURL)
             .setColor(Math.floor((Math.random() * 1600000) + 6))
             .addField('__**Translator**__', `**From:** ${res.from.language.iso}\n\`\`\`${finalToTrans}\`\`\`\n**To: **${language}\n\`\`\`${res.text}\`\`\``);
         msg.channel.send({embed});
@@ -33,7 +33,7 @@ exports.run = async (client, msg, args) => {
         });
     });
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       msg.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on translate commands!\n\nError:\n\n ${err}`)
     }
