@@ -38,7 +38,7 @@ exports.run = (client, message, args) => {
   .setImage(url)
   message.channel.send(mcaembed)
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666547517772660736')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on achievement commands!\n\nError:\n\n ${err}`)
     }
