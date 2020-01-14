@@ -41,7 +41,7 @@ exports.run = async (bot, msg, args) => {
 
         msg.channel.send({embed});
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666545299778568192')
       msg.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on strawpoll commands!\n\nError:\n\n ${err}`)
     }
