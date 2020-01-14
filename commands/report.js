@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
         cooldown.delete(message.author.id);
     }, 10000);
     
-  const cnl = bot.channels.get('459326999345758209');
+  const cnl = bot.channels.get('666562929533124608');
   let guild = message.guild;
     message.delete()
     if(args[0] == "14252152"){
@@ -65,11 +65,11 @@ module.exports.run = async (bot, message, args) => {
     .setFooter(message.createdAt)
     send(cnl, communityembed, {
         name: `Report`,
-        icon: `https://cdn.discordapp.com/attachments/421620705570979843/462632872616919053/R-logo512.png`
+        icon: `https://cdn.discordapp.com/attachments/666560077226049546/666560191130501150/phantomlogo.png`
     })
   
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on report commands!\n\nError:\n\n ${err}`)
     }
@@ -85,6 +85,6 @@ exports.conf = {
 exports.help = {
   name: 'report',
   category: 'UTIL',
-  description: 'Report mentioned user',
+  description: 'Report a user',
   usage: 'report <mention> <reason>'
 }
