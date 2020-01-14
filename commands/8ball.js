@@ -10,7 +10,7 @@ if (cooldown.has(message.author.id)) {
     cooldown.delete(message.author.id);
   }, 2000);
 if(!args[0]) return message.reply("Please ask a full question!");
-let replies = ["Yes.", "No.", "I don't know.", "of course.", "Ask again later", "Most likely", "As I see it, yes", "Not sure", "Maybe", "Nope", "NO - It may cause dissaster!", "My Source say yes", "Most likely no"];
+let replies = ["Yes.", "No.", "I don't know.", "of course.", "Ask again later", "Most likely", "As I see it, yes", "Not sure", "Maybe", "Nope", "NO - It may cause dissaster!", "My Source say yes", "get bent", "Most likely no"];
 
 let result = Math.floor((Math.random() * replies.length));
 let question = args.slice(0).join(" ");
@@ -23,7 +23,7 @@ let ballembed = new Discord.RichEmbed()
 
 message.channel.send(ballembed);
     } catch(err) {
-      const errorlogs = bot.channels.get('464424869497536512')
+      const errorlogs = bot.channels.get('666547517772660736')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on 8ball commands!\n\nError:\n\n ${err}`)
     }
