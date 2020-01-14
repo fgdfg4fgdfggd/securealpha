@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#15f153")
     .setThumbnail(bicon)
     .setDescription(`**Bot Name**: ${bot.user.username}\n**Owner**: <@${config.ownerID}> | Dis_chat#1378\n**Users**: ${bot.users.size}\n**Servers**: ${bot.guilds.size}\n**Commands Count**: 70\n**Uptime**: ${duration}\n**Channels**: ${bot.channels.size.toLocaleString()}`)
-    .addField('Useful Links', `[Support server](https://discord.gg/GPMH6YD) - [Roblox](https://www.roblox.com/users/852900588/profile) - [RCDForum](https://rcdforum.com/) - [Donate](https://www.patreon.com/RyanBot)`)
+    .addField('Useful Links', `[Support server](https://discord.gg/GPMH6YD) - [Roblox](https://www.roblox.com/users/852900588/profile) - [RCDForum](https://rcdforum.com/)`)
     .setFooter(`Bot by RCDForum Team ||`)
 
     message.channel.send(botembed);
