@@ -4,14 +4,14 @@ exports.run = (client, message) => {
   try {
   let partneremb = new Discord.RichEmbed()
   .setAuthor(`RyanBot Partnership`, client.user.displayAvatarURL)
-  .setDescription(`If you want become partnerships dm RyansHDs#4461 or join [support server](https://discord.gg/FTmxve7)`)
-  .addField(`__Servers Partnerships__`, `[**HDClan**](https://discord.gg/gxE2Ya7)\n[**RyanBot Support**](https://discord.gg/FTmxve7)`,true)
-  .addField(`__Bot partnerships__`, `[**RyanBot**](https://discordapp.com/oauth2/authorize?client_id=450233057908097024&permissions=8&scope=bot)\n[**Hinami**](https://discordapp.com/oauth2/authorize?client_id=447759514746224641&scope=bot&permissions=2146958591)`, true)
+  .setDescription(`If you want become partnerships dm Dis_chat#1378 or join [support server](https://discord.gg/GPMH6YD)`)
+  .addField(`__Servers Partnerships__`, `[**RCD**](https://discord.gg/DyYGdAg)\n[**Phantom Support**](https://discord.gg/GPMH6YD)`,true)
+  .addField(`__Bot partnerships__`, `[**RCDForum**](https://rcdforum.com/)\n[**RCD**](https://www.roblox.com/groups/3326755/ROBLOX-Community-Developers#!/about)`, true)
   .setFooter('Updated Daily')
   .setColor('#01fc0c')
   message.channel.send(partneremb)
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on partnerships commands!\n\nError:\n\n ${err}`)
     }
