@@ -53,7 +53,7 @@ message.channel.send(
         .join('')
 );
     } catch(err) {
-      const errorlogs = client.channels.get('464424869497536512')
+      const errorlogs = client.channels.get('666545299778568192')
       message.channel.send(`Whoops, We got a error right now! This error has been reported to Support center!`)
       errorlogs.send(`Error on emojify commands!\n\nError:\n\n ${err}`)
     }
@@ -69,6 +69,6 @@ exports.conf = {
 exports.help = {
   name: "emojify",
   category: "Misc",
-  description: "Says your text in big LETTERS",
+  description: "Says your text in big LETTERS **I MEAN BIG** ",
   usage: "emojify [text]"
 };
