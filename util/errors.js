@@ -26,7 +26,7 @@ module.exports.equalPerms = (message, user, perms) => {
 module.exports.botuser = (message) => {
     let embed = new Discord.RichEmbed()
         .setTitle("Error")
-        .setDescription("You cannot ban a bot.")
+        .setDescription("You cannot ban a bot. BIG NOOB")
         .setColor('RANDOM');
 
     message.channel.send(embed).then(m => m.delete(5000));
